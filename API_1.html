@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<title>Zadanie 1 - Windows API</title>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<h4>Windows API - cz. 1</h4>
+<p>Saper</p>
+<ul>
+  <li><a href="WinAPI_Minesweeper_Lab.exe">Wzór programu</a></li>
+  <li>Opis zadania:
+    <ul>
+		Stwórz klon gry Saper (Minesweeper).
+    </ul>
+  </li>
+  <li>Funkcjonalność:
+    <ul>
+     <li>Okno:
+       <ul>
+		 <li>składa się z pustego górnego panelu o wysokości 30 pikseli oraz prostokątnej planszy o losowym rozmiarze</li>
+		 <li>szerokość planszy jest pomiędzy 10 a 30, wysokość pomiędzy 10 a 24 pól</li>
+		 <li>pojedyncze pole ma wymiar 25 na 25 pikseli (rozmiar ma się dać łatwo zmienić z poziomu kodu) oraz odstęp pomiędzy polami 1 piksel</li>
+	     <li>rozmiar okna głównego należy wyliczyć/wyznaczyć tak, aby mieścił całą planszę oraz górny panel</li>
+		 <li>okno pojawia się na środku ekranu</li>
+	     <li>należy uniemożliwić zmianę rozmiaru okna</li>
+	     <li>tytuł okna zawiera timer gry w formacie 0000.0, liczący czas gry w sekundach</li>
+       </ul>
+      </li>
+      <li>Pola planszy:
+       <ul>
+         <li>każde pole to osobne okno</li>
+         <li>kolor tła to #C8C8C8</li>
+		 <li>kliknięcie lewym przyciskiem myszy w pol powoduje uruchomienie timera gry, ponowne kliknięcie jego zatrzymanie aż do ponownego uruchomienia ponowie gry</li>
+       </ul>
+      </li>
+      <li>Menu główne:
+       <ul>
+         <li>zawiera dwa rozwijalne menu: Game oraz Help</li>
+		 <li>Game składa się z przycisków New (F2), Custom size... oraz Exit rozdzielone za pomocą separatora</li>
+		 <li>Help składa się z przycisków About... oraz Debug (F12)</li>
+		 <li>kliknięcie w przycisk New powoduje zresetowanie gry - nowy rozmiar planszy jest losowany oraz okno przesuwa się na środek ekranu</li>
+		 <li>kliknięcie w przycisk Debug powoduje jego zaznaczenie lub odznaczenie oraz pojawia się MessageBox z odpowiednim komunikatem</li>
+		 <li>wszystkie pola menu powinny zawierać odpowiednie skróty do nawigacji</li>
+       </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Dodatkowe wymagania:
+    <ul>
+     <li>na pasku zadań widoczne tylko jedno okno</li>
+     <li>kombinacja Alt+F4 kończy działanie aplikacji</li>
+	 <li>menu systemowe po kliknięciu kombinacji Alt+Spacja lub kliknięciu prawym przyciskiem myszy na oknie w pasku zadań</li>
+    </ul>
+  </li>
+  <li>Wskazówki:
+    <ul>
+	  <li>AdjustWindowRect()</li>
+	  <li>WS_THICKFRAME</li>
+	  <li>MessageBox()</li>
+	  <li>CheckMenuItem()</li>
+	  <li>SetTimer() GetTickCount()</li>
+    </ul>
+  </li>
+</ul>
+
+<ul>
+	<li>Punktacja:
+	<ul>
+		<li>okno pojawia się na środku - 1 punkt</li>
+		<li>okno zawiera odpowiednio rozmieszczone okna pól - 2 punkty</li>
+		<li>poprawny rozmiar okna wyliczony na podstawie liczby pól - 1 punkt</li>
+		<li>timer w tytule okna - 1 punkt</li>
+		<li>działający timer liczący czas - 2 punkty</li>
+		<li>poprawne uruchomienie i zatrzymanie timera - 1 punkt</li>
+		<li>poprawnie działające menu - 2 punkty</li>
+		<li>działający przycisk New - 1 punkt</li>
+		<li>działający przycisk Debug - 1 punkt</li>
+	</ul>
+	</li>
+</ul>
+</body>
+</html>

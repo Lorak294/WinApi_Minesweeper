@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<title>Zadanie 1 - Windows API</title>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<h4>Windows API - cz. 2 (domowa)</h4>
+<p>Saper</p>
+<ul>
+	<li><a href="WinAPI_Minesweeper_Home.exe">Wzór programu</a></li>
+	<li>Opis zadania:
+	<ul>
+		 <li>Dokończ implementację gry Saper.</li>
+		 <li>Gra na starcie ma planszę o rozmiarze 10 na 10 i 10 min.</li>
+		 <li>Gra kończy się, gdy wszystkie pola bez min zostaną odkryte, wszystkie pola z minami zostaną oznaczone flagami lub gdy zostanie kliknięte pole z miną.</li>
+		 <li>Timer zatrzymuje się, gdy gra zostanie zakończona.</li>
+	</ul>
+	</li>
+	<li>Funkcjonalność:
+	<ul>
+	 <li>Okno:
+	   <ul>
+		 <li>górny panel zawiera timer oraz licznik pozostałych min wyśrodkowane odpowiednio w 1/4 i 3/4 szerokości panelu</li>
+		 <li>tekst jest koloru czerwonego, wysokości 25 pikseli, pogrubiony Arial</li>
+	   </ul>
+	  </li>
+	  <li>Pola planszy:
+	   <ul>
+		 <li>zakryte pole jest koloru wyszarzonego tekstu (GRAYTEXT)</li>
+		 <li>pola da się oznaczyć <a href="flag.bmp">flagą</a> (poprzez kliknięcie prawym przyciskiem myszy) i odznaczyć z powrotem</li>
+		 <li>w pola z flagą nie da się kliknąć lewym przyciskiem myszy</li>
+		 <li>kliknięcie lewym przyciskiem myszy w puste pole powoduje odsłonięcie pola</li>
+		 <li>jeżeli pole zawiera minę - wyświetla czarną kropkę na środku pola</li>
+		 <li>jeżeli pole sąsiaduje z co najmniej jedną miną - wyświetla liczbę min w sąsiednich polach</li>
+		 <li>liczba min jest wyśrodkowana w oknie i jej kolor zależy od jej wartości</li>
+		 <li>kliknięcie w pole z miną powoduje pojawienie się MessageBoxa z ikonką błędu i przyciskiem OK oraz powoduje zatrzymanie gry</li>
+		 <li>kliknięcie w pole, które nie sąsiaduje z żadną z min (bez wartości), powoduje odsłonięcie całego regionu</li>
+	   </ul>
+	  </li>
+	  <li>Menu główne:
+	   <ul>
+		 <li>przycisk Custom size... otwiera okno dialogowe Board size, które pozwala na ustawienie rozmiaru planszy</li>
+		 <li>rozmiar planszy nie może być większy niż 24x30</li>
+		 <li>liczba min nie może być mniejsza niż 10</li>
+		 <li>przycisk Debug włącza i wyłącza tryb Debug wyświetlania układu min na planszy - rysowanie wartości ukrytych pól</li>
+	   </ul>
+	  </li>
+	</ul>
+	</li>
+
+	<li><i>Uwaga: We wszystkich wątpliwych i nieopisanych aspektach obowiązuje odtwarzanie zachowania programu wzorcowego.</i></li>
+	<li>Orientacyjna punktacja:
+	<ul>
+		<li>górny panel - 2 punkty</li>
+		<li>generowanie planszy o zadanym rozmiarze i ilości min - 1 punkt</li>
+		<li>poprawne wyświetlanie flagi - 2 punkty</li>
+		<li>poprawne wyświetlanie min - 1 punkt</li>
+		<li>poprawnie wyświetlanie liczby sąsiadujących min - 2 punkty</li>
+		<li>okno dialogowe Board size - 2 punkty</li>
+		<li>tryb Debug - 1 punkty</li>
+		<li>logika końca gry (zliczanie min i flag) - 1 punkt</li>
+		<li></li>
+	</ul>
+</li>
+</ul>
+
+</body>
+</html>
